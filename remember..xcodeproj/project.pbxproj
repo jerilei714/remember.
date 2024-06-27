@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DA1C6D12C30288000890DA5 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 4DA1C6D02C30288000890DA5 /* SQLite */; };
+		4DA1C6D32C30289900890DA5 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1C6D22C30289900890DA5 /* DatabaseManager.swift */; };
+		4DA1C6D52C3029BF00890DA5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1C6D42C3029BF00890DA5 /* MainView.swift */; };
 		4DA5640A2C2D53D200196D75 /* remember_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA564092C2D53D200196D75 /* remember_App.swift */; };
 		4DA5640C2C2D53D200196D75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5640B2C2D53D200196D75 /* ContentView.swift */; };
 		4DA5640E2C2D53D300196D75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DA5640D2C2D53D300196D75 /* Assets.xcassets */; };
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4DA1C6D22C30289900890DA5 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		4DA1C6D42C3029BF00890DA5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4DA564062C2D53D200196D75 /* remember..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = remember..app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA564092C2D53D200196D75 /* remember_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remember_App.swift; sourceTree = "<group>"; };
 		4DA5640B2C2D53D200196D75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA1C6D12C30288000890DA5 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +102,8 @@
 			children = (
 				4DA564092C2D53D200196D75 /* remember_App.swift */,
 				4DA5640B2C2D53D200196D75 /* ContentView.swift */,
+				4DA1C6D22C30289900890DA5 /* DatabaseManager.swift */,
+				4DA1C6D42C3029BF00890DA5 /* MainView.swift */,
 				4DA5640D2C2D53D300196D75 /* Assets.xcassets */,
 				4DA5640F2C2D53D300196D75 /* Preview Content */,
 			);
@@ -143,6 +151,9 @@
 			dependencies = (
 			);
 			name = remember.;
+			packageProductDependencies = (
+				4DA1C6D02C30288000890DA5 /* SQLite */,
+			);
 			productName = remember.;
 			productReference = 4DA564062C2D53D200196D75 /* remember..app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 4DA563FD2C2D53D200196D75;
+			packageReferences = (
+				4DA1C6CF2C30288000890DA5 /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
 			productRefGroup = 4DA564072C2D53D200196D75 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DA5640C2C2D53D200196D75 /* ContentView.swift in Sources */,
+				4DA1C6D52C3029BF00890DA5 /* MainView.swift in Sources */,
 				4DA5640A2C2D53D200196D75 /* remember_App.swift in Sources */,
+				4DA1C6D32C30289900890DA5 /* DatabaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +604,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4DA1C6CF2C30288000890DA5 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4DA1C6D02C30288000890DA5 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4DA1C6CF2C30288000890DA5 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4DA563FE2C2D53D200196D75 /* Project object */;
 }
